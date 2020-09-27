@@ -1,0 +1,13 @@
+{
+  "name": "disable quote-link on hatena blog",
+  "version": "1",
+  "manifest_version": 2,
+  "description": "excute javascript",
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["app.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
